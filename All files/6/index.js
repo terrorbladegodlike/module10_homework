@@ -1,14 +1,5 @@
-let myMap = new Map([
-   ['bmw', 5000],
-   ['toyota', 2000],
-   ['mercedes', 4000],
-   ['mazda', 2500]
-]);
+let arr = [14, 52, 87, 20, 43, 1];
 
-for (let name of myMap.keys()) {
-   console.log('Ключ - ', name,);
-}
+const allElement = arr => arr.every(v => v === arr[0]);
 
-for (let price of myMap.values()) {
-   console.log('Значение - ', price);
-}
+console.log(allElement(arr));

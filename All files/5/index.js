@@ -1,17 +1,7 @@
-let arr = [5, 20, 30, 3, 1, 78, null];
+let arr = ["Яблоко", "Апельсин", "Груша", "Банан", "Мандарин", "Помидор"];
 
-const even = arr.filter(number => {
-   return number % 2 == 0 && typeof (number) == 'number';
-});
+console.log(arr.length);
 
-const odds = arr.filter(number => {
-   return number % 2 !== 0 && typeof (number) == 'number';
-});
-
-const error = arr.filter(number => {
-   return typeof (number) !== 'number';
-})
-
-console.log("Это четные числа: ", even);
-console.log("Это нечетные числа: ", odds);
-console.log("Это нулевое значение: ", error);
+for (let i = 0; i < arr.length; i++) {
+   console.log(arr[i]);
+}
